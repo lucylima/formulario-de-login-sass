@@ -1,0 +1,78 @@
+$cor-primaria: #FA43B3;
+$cor-secundaria: #FA43B3;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html, body{padding:0; margin: 0; font-family:'Poppins', sans-serif;}
+* {box-sizing: border-box; padding: 0; margin: 0;}
+
+
+.FormApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-card {
+  height: 45%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 10px rgb(92, 92, 92);
+  border-radius: 30px;
+  .titulo-form {
+    font-size: 24pt;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  .fields {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14pt;
+    width: 100%;
+    input {
+      width: 100%;
+      padding: 0.5rem 0rem;
+      font-size: 12pt;
+      border: none;
+      color: gray;
+      border-bottom: 1px solid $cor-primaria;
+    }
+    input:focus {
+      outline: none;
+      transition: 0.5s;
+      border-bottom: 1px solid $cor-primaria;
+    }
+  }
+  .utility-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .remember-password {
+      display: flex;
+      align-items: center;
+
+      #senha:checked{
+      color: $cor-primaria;
+
+      }
+    }
+  }
+  .login-button {
+    width: 100%;
+    
+  }
+}
